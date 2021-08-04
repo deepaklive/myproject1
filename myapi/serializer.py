@@ -5,5 +5,4 @@ class AuthorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Author
         fields = ['id', 'name', 'age']
-
-        #something added
+        
