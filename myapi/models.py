@@ -1,15 +1,15 @@
 from typing import FrozenSet
 from django.db import models
+from django.db.models import CharField, IntegerField, ForeignKey, CASCADE, ManyToManyField
 
 # Create your models here.
-# This is a Test code
-# This is another line of code 
 
+class Author(models.Model):
+    name = CharField(max_length=100)
+    age = IntegerField()
 
+    class Meta:
+        ordering = ['name']
 
-# this is a change for new brnach
-#akjsd fsadj dsajlfjsad
-#3sadf
-#sad 
-#FrozenSetd sadfsad
-
+    def __str__(self):
+        return f'{self.name}'
