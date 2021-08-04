@@ -4,4 +4,6 @@ from .models import Author
 class AuthorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Author
-        fields = ['name', 'age']
+        fields = ['id', 'name', 'age']
+
+        #something added
